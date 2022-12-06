@@ -30,13 +30,14 @@
 <body>
     <!--navbar-->
     <nav class="navbar">
-      
-
+        <h1 class="logo"><img data-lazy="./images/logo.png" alt="">
+            <!--<img class="primary-icon" img src="./images/logo.png">-->
         </h1>
         <ul class="nav-links">
-   
-
-            <li class="ctn"><a href="#home" id="team_id">Home</a></li>
+            <li class="ctn" class="active"><a href="#home" id="home_id">Home</a></li>
+            <li class="ctn"><a href="#about" id="about_id">Educational Videos</a></li>
+            <li class="ctn"><a href="#teams">Target Audience</a></li>
+            <li class="ctn"><a href= "#needs">Needs</a></li>
         </ul>
         <img data-lazy="./images/button.png" alt="" class="menu-btn">
     </nav>
@@ -84,14 +85,14 @@
             <div class="abouttext1" data-aos="fade-left" data-aos="fade-right" data-aos-offset="300" data-aos-delay="100"
                 data-aos-duration="1000">
                 <h2>OUR TARGET AUDIENCE</h2>
-                <p>Our target audience would be our fellow students.</p>
+                <p>Our site's main target audience would be our fellow students. Educational videos will help them since all of our content can be accessed easily. Students aren't the only audience we can cater to though, our site can also appeal to other people who want to learn more things in general.</p>
             </div>
         </div>
     </section>
 
         <!-- teams -->
 
-        <section id="teams" class="info">
+        <section id="needs" class="info">
             <div class="title" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
                 <h1>NEEDS</h1>
                 <div class="line"></div>
@@ -116,7 +117,9 @@
    
 
     <!-- Script for top scrolling-->
-   
+
+    <div onclick="scrolltoTop()" class="scrollTop"><i class="fas fa-angle-double-up"></i></div>
+    <script src="./scripts/scrolltop.js" type="text/javascript"></script>
     <!-- Script for Navbar animation-->
     <script src="./scripts/mobile-menu.js"></script>
 
